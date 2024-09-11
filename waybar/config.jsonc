@@ -1,0 +1,137 @@
+{
+    "layer": "top",
+    "reload_style_on_change": true,
+    "position": "top",
+    "mode": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    "modules-left": [
+    	"battery",
+        "memory",
+        "cpu",
+        "hyprland/workspaces"
+    ],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+    	"mpris",
+        "tray",
+        "pulseaudio",
+        "custom/date",
+        "clock"
+    ],
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 50
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+    },
+    "clock": {
+      "interval": 60,
+      "format": "{:%a %d %b %Y | %I:%M %p}",
+      "format-24h": false,
+      "date": true,
+      "tooltip-format": "<tt>{calendar}</tt>",
+      "calendar": {
+      	"mode": "month",
+      	"mode-mon-col": 3,
+      	"on-scroll": 1,
+      	"on-click-right": "mode",
+      	"format": {
+      		"months": "<span color='#ffffff'><b>{}</b></span>",
+      		"weekdays": "<span color='#ffffff'><b>{}</b></span>",
+      		"today": "<span color='#8a5cf5'><b>{}</b></span>",
+      		"days": "<span color='#7f7f7f'><b>{}</b></span>"
+      	}
+      }
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "󰁹 {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+         },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+   
+        "cpu": {
+            "interval": 10,
+            "format": "CPU: <b>{}</b>%"
+        },
+        "memory": {
+            "interval": 10,
+            "format": "RAM: <b>{}</b>%"
+        },
+          "mpris": {
+    "format": "󰝚 <b>{title}</b> - {artist}",
+    "format-paused": "󰝚 ⏸",
+    "format-tooltip": "{player}: {title} - {artist} {album}",
+    "max-length": 60,
+    "on-click-backward": "playerctl previous",
+    "on-right-click": "",
+    "on-click-forward": "playerctl next",
+    "on-scroll-up": "playerctl volume 0.05+",
+    "on-scroll-down": "playerctl volume 0.05-",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    }
+  },
+   
+    }
+
+

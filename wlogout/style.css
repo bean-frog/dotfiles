@@ -1,0 +1,29 @@
+* {
+    font-family: JetBrains Mono, Symbols Nerd Font;
+    font-size: 24px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+window {
+    background-color: rgba(1, 2, 3, 0.9);
+    /* border-radius: 10px; */
+}
+
+button, #exit, #shutdown, #suspend, #lock, #logout, #reboot {
+
+    background-color: #1b054d;
+    border-style: solid;
+     border-width: 2px; 
+    border-radius: 50px;
+    margin: 10px;
+    border-color: #8a5cf5;
+    background-size: 100%
+    
+}
+button:hover, #exit:hover, #shutdown:hover, #suspend:hover, #lock:hover, #logout:hover, #reboot:hover {
+	background-color: #242526
+}
+
+
+

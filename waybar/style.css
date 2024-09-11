@@ -1,0 +1,151 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Jetbrains Mono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+/* Main Waybar Background */
+window#waybar {
+    background: rgba(0, 0, 0, 0); /* Transparent background for main bar */
+    color: #ffffff; /* White text color */
+}
+
+/* Tooltip Styling */
+tooltip {
+    background: #010203; /* Rich black */
+    border-radius: 10px;
+    border: 1px solid #9b59b6; /* 1px purple border */
+}
+
+/* Workspaces Section */
+#workspaces {
+    background: #010203; /* Rich black background */
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#workspaces button {
+    padding:3px 10px; /* Reduced vertical padding */
+    color: #ffffff; /* White text */
+    margin: 5px 2px;
+    border-radius: 8px;
+    border: 1px solid #9b59b6; /* Purple border */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#workspaces button.active, #workspaces button.focused {
+    color: #ffffff; /* White text */
+    background: #9b59b6; /* Purple background for active/focused */
+}
+
+#workspaces button.urgent {
+    color: #ffffff; /* White text */
+    background: #e74c3c; /* Red for urgent workspaces */
+}
+
+#workspaces button:hover {
+    background: #141414; /* Slightly lighter black on hover */
+    color: #9b59b6; /* Purple text on hover */
+}
+
+/* Module Styling */
+#custom-language,
+#custom-weather,
+#custom-waybar-media,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#backlight,
+#cpu,
+#mpris,
+#memory {
+    background: #010203; /* Rich black */
+    padding: 3px 10px; /* Reduced vertical padding */
+    margin: 5px 0;
+    border: 1px solid #9b59b6; /* 1px purple border */
+    border-radius: 8px;
+    color: #ffffff; /* White text for all modules */
+}
+
+/* Tray Styling */
+#tray {
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/* Language Module */
+#custom-language {
+    color: #9b59b6; /* Purple text for the language module */
+    border-radius: 8px;
+}
+
+/* Updates Module */
+#custom-updates {
+    color: #9b59b6; /* Purple text for the updates module */
+    border-radius: 8px;
+}
+
+/* Window Title Module */
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* Media Player Module */
+#custom-waybar-media {
+    border-radius: 10px;
+}
+
+/* Clock Module */
+#clock {
+    color: #ffffff; /* White text for the clock */
+    border-radius: 10px 0 0 10px;
+    margin-left: 5px;
+}
+
+/* Network Module */
+#network {
+    color: #ffffff; /* White text for the network module */
+}
+
+/* PulseAudio Module */
+#pulseaudio {
+    color: #ffffff; /* White text for the audio module */
+}
+
+#pulseaudio.microphone {
+    color: #ffffff; /* White text for the microphone */
+    border-radius: 0 10px 10px 0;
+}
+
+/* Battery Module */
+#battery {
+    color: #ffffff; /* White text for the battery module */
+    margin-left:5px
+}
+
+/* Weather Module */
+#custom-weather {
+    border-radius: 0 10px 10px 0;
+}
+
+/* CPU Module */
+#cpu {
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 5px
+}
+#memory {
+	margin-left:5px
+}
+
+#mpris {
+	margin-right: 5px
+	
+}
